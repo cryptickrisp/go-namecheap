@@ -14,7 +14,8 @@ const (
 type DomainDNSGetHostsResult struct {
 	Domain        string          `xml:"Domain,attr"`
 	IsUsingOurDNS bool            `xml:"IsUsingOurDNS,attr"`
-	Hosts         []DomainDNSHost `xml:"Host"`
+	EmailType     string          `xml:"EmailType,attr"`
+	Hosts         []DomainDNSHost `xml:"host"`
 }
 
 type DomainDNSHost struct {
